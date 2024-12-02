@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sample/my_container.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,13 +11,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      show
-      //title:), 
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      title:"My Flutter Sample", 
+      home: MyContainer(),
     );
   }
 }
